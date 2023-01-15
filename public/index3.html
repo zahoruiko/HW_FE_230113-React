@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link href="styles.css" rel="stylesheet" />
+    <title>Prototype.com</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body,
+      div,
+      span,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      a,
+      ul,
+      li {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+      }
+      body {
+        font-family: Verdana, Arial, sans-serif;
+      }
+      header {
+        background: url("https://www.forcepoint.com/sites/default/files/styles/1800x514_sc/public/swg-header-faded-1920x514.jpg?itok=l6IL4BMS&timestamp=1650388494");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      #site-title {
+        font-size: 24px;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 20px 10px 10px 5px;
+        margin-left: 20px;
+        clear: both;
+      }
+      #main-menu {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 15px;
+      }
+      #main-menu li {
+        float: left;
+        list-style: none;
+      }
+      #main-menu a {
+        display: block;
+        color: black;
+        padding: 10px 25px;
+        text-decoration: none;
+        border: 1px solid white;
+        cursor: pointer;
+      }
+      #main-menu li:last-child a {
+        /* border-right: none; */
+      }
+      #main-menu a:hover {
+        border: 1px solid black;
+        transition: all 0.5s ease-out;
+      }
+      #main-menu:after {
+        content: " ";
+        display: table;
+        clear: both;
+      }
+      #wrapper {
+        /* background-color: #f7f7f7; */
+      }
+      aside {
+        /* background-color: aqua; */
+      }
+      aside h2 {
+        font-size: 0.95em;
+        margin-top: 15px;
+      }
+      aside h3 {
+        font-size: 0.85em;
+        margin-top: 10px;
+      }
+      aside p,
+      aside li {
+        font-size: 1.0em;
+      }
+      aside li {
+        list-style-type: none;
+      }
+      #leftSidebar {
+        float: left;
+        width: 200px;
+        padding: 0 0px 0 0px;
+      }
+      #leftSidebar h3 {
+        font-size: 18px;
+        padding: 10px 0 10px 20px;
+      }
+      #rightSidebar {
+        float: right;
+        width: 230px;
+        padding: 0 20px 0 10px;
+      }
+      #rightSidebar h3 {
+        font-size: 18px;
+        padding: 10px 0 10px 0;
+      }
+      article {
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        margin-left: 200px;
+        margin-right: 250px;
+        padding: 15px;
+      }
+      article:after {
+        clear: both;
+        display: table;
+        content: "";
+      }
+      article h1 {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+      }
+      article h2 {
+        font-size: 1.3em;
+        margin-bottom: 15px;
+      }
+      article p {
+        line-height: 150%;
+        margin-bottom: 15px;
+      }
+      footer {
+        border-top: 1px solid #ccc;
+        font-size: 0.8em;
+        text-align: center;
+        padding: 10px 10px 30px 10px;
+      }
+      #main-menu ul,
+      header h1,
+      #wrapper,
+      footer p {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      #wrapper,
+      #main-menu,
+      header,
+      footer {
+        min-width: 768px;
+      }
+
+      ul#context-menu {
+        margin-left: 0px;
+        padding-left: 0px;
+        list-style: none;
+      }
+      ul#context-menu a {
+        display: block;
+        padding: 20px;
+        border-left: 4px solid white;
+        text-decoration: none;
+        color: #333;
+      }
+      ul#context-menu a:hover {
+        color: #333;
+        background-color: #eee;
+        border-left: 4px solid gray;
+      }
+      /* ul.menu li:last-child a {
+        border-bottom: 1px dashed #333;
+      } */
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="site-title">Prototype.com</div>
+      <nav id="main-menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Forum</a></li>
+          <li><a href="#">Contacts</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="wrapper">
+      <aside id="leftSidebar">
+        <h3>Menu:</h3>
+        <nav>
+          <ul id="context-menu">
+            <li><a href="#">Users</a></li>
+            <li><a href="#">Posts</a></li>
+            <li><a href="#">Comments</a></li>
+            <li><a href="#">Photos</a></li>
+            <li><a href="#">Todos</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <aside id="rightSidebar">
+        <h3>Advertising:</h3>
+        <img src="https://via.placeholder.com/200x600/404090/ffffff ?Text=Digital.com" alt="">
+      </aside>
+
+      <article>
+        <h1>About Prototype.com</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, voluptate. Earum expedita voluptatum doloribus inventore blanditiis officiis mollitia, magni esse sapiente sint et, eaque a sit error minima est ab!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dignissimos sit aliquam dolore distinctio blanditiis voluptates quis sapiente explicabo placeat, magni ipsum est totam quasi deleniti ipsa dicta! Quisquam, architecto.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sint exercitationem illo ipsam, adipisci itaque id ullam beatae laudantium, et eveniet quia nisi, corporis iste consequuntur consectetur qui omnis unde.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea aut aspernatur commodi aperiam? Accusantium in minima debitis accusamus corrupti maiores, ex consectetur expedita optio, fuga esse quae dolor placeat nemo.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dignissimos sit aliquam dolore distinctio blanditiis voluptates quis sapiente explicabo placeat, magni ipsum est totam quasi deleniti ipsa dicta! Quisquam, architecto.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sint exercitationem illo ipsam, adipisci itaque id ullam beatae laudantium, et eveniet quia nisi, corporis iste consequuntur consectetur qui omnis unde.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea aut aspernatur commodi aperiam? Accusantium in minima debitis accusamus corrupti maiores, ex consectetur expedita optio, fuga esse quae dolor placeat nemo.
+          </p>
+      </article>
+    </div>
+    <footer>
+      <p>© Prototype.com</p>
+      <p>All rights reserved.</p>
+    </footer>
+  </body>
+</html>
