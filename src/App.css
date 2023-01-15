@@ -53,9 +53,6 @@ header {
   border: 1px solid white;
   cursor: pointer;
 }
-#main-menu li:last-child a {
-  /* border-right: none; */
-}
 #main-menu a:hover {
   border: 1px solid black;
   transition: all 0.5s ease-out;
@@ -64,12 +61,6 @@ header {
   content: " ";
   display: table;
   clear: both;
-}
-#wrapper {
-  /* background-color: #f7f7f7; */
-}
-aside {
-  /* background-color: aqua; */
 }
 aside h2 {
   font-size: 0.95em;
@@ -165,6 +156,3 @@ ul#context-menu a:hover {
   background-color: #eee;
   border-left: 4px solid gray;
 }
-/* ul.menu li:last-child a {
-  border-bottom: 1px dashed #333;
-} */
